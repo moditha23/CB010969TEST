@@ -1,0 +1,146 @@
+/*Header section*/
+#header{
+    background-image: url(./images/byproducts.webp);
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+    z-index: 1;
+}
+
+#header:after{
+    content: '';
+    position:absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.7;
+    z-index:-1 ;
+}
+
+#header .header{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 50px;
+    justify-content: flex-start;
+
+}
+
+#header h1{
+    display: block;
+    width: fit-content;
+    font-size: 4rem;
+    position: relative;
+    color: transparent;
+    animation: text_reveal 2.5s ease forwards;
+    animation-delay: 1s;
+}
+
+#header h1 :nth-child(1){
+    animation-delay: 1S;
+}
+
+#header h2{
+    display: block;
+    width: fit-content;
+    font-size: 2rem;
+    position: relative;
+    color: transparent;
+    animation: text_reveal 3s ease forwards;
+    animation-delay: 1.5s;
+}
+
+#header h2:nth-child(2){
+    animation-delay: 2s;
+}
+
+#header h2 span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: rgb(179, 132, 13);
+    animation: text_reveal_box 1s ease;
+    animation-delay: 1s;
+}
+
+
+#header h1 span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: rgb(179, 132, 13);
+    animation: text_reveal_box 1s ease;
+    animation-delay: 1s;
+}
+
+#header .cta{
+    display:inline-block ;
+    padding: 10px 30px;
+    color: rgb(179, 132, 13);
+    background-color: transparent;
+    border: 2px solid rgb(179, 132, 13);
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+    margin-top: 30px;
+    transition: 0.3s ease ;
+    transition-property: background-color, color;
+}
+
+#header .cta:hover{
+    color: white;
+    background-color: rgb(179, 132, 13);
+
+}
+/*End of header section*/
+
+/*button*/
+
+
+.cta{
+    display:inline-block ;
+    padding: 10px 30px;
+    color: rgb(179, 132, 13);
+    background-color: transparent;
+    border: 2px solid rgb(179, 132, 13);
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+    margin-top: 30px;
+    transition: 0.3s ease ;
+    transition-property: background-color, color;
+}
+
+ .cta:hover{
+    color: white;
+    background-color: rgb(179, 132, 13);
+ }
+
+/*media quaries*/
+ @media(max-width:700px){
+    #oilimg{
+        width: 300px;
+    }
+ }
+
+ #other{
+    margin-bottom: 20px;
+ }
+
+ @media(max-width:426px){
+    #ceylon .ceylon-top{
+        display: none;
+    }
+ }
+ @media(max-width:376px){
+    #ceylon .ceylon-bottom .ceylon-item img{
+        width: 100px;
+        height: 100px;
+    }
+ }
+ /*media qualities*/

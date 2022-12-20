@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+<div id="form">
+    <script src="./w.js"></script>
+        
+    <h2 id="formheading">~LET'S MAKE A RESERVATION~</h2>
+    <br>
+  
+    <form method="get">
+        <fieldset id="tickets">
+            <legend>TICKETS</legend>
+            <br>
+  
+            <fieldset id="details">
+                <legend>Personal Details</legend>
+                <p>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </p>
+  
+                <p>
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+                </p>
+            </fieldset>
+  
+            <fieldset id="foreign">
+                <legend>Foreign Tickets</legend>
+                <p>
+                    <label for="foreignadults">Number of Foreign Adults:</label>
+                    <input type="number" id="foreignadults" name="foreignadults" value="0" min="0">
+                </p>
+  
+                <p>
+                    <label for="foreignchild">Number of Foreign Children:</label>
+                    <input type="number" id="foreignchild" name="foreignchild" value="0" min="0">
+                </p>
+            </fieldset>
+  
+            <fieldset id="local">
+                <legend>Local Tickets</legend>
+                <p>
+                    <label for="localadults">Number of Local Adults:</label>
+                    <input type="number" id="localadults" name="localadults" value="0" min="0">
+                </p>
+  
+                <p>
+                    <label for="localchildu6">Number of Local Children(Below the age 6):</label>
+                    <input type="number" id="localchildu6" name="localchildu6" value="0" min="0">
+                </p>
+                <p>
+                    <label for="localchildu15">Number of Local Children(Below the age 15):</label>
+                    <input type="number" id="localchildu15" name="localchildu15" value="0" min="0">
+                </p>
+            </fieldset>
+            <br>
+  
+            <p>
+                <label for="duration">Duration:</label>
+                <input type="radio" id="timeslot1" name="timeslot" required value="Three Hours">Three Hours
+                <input type="radio" id="timeslot2" name="timeslot" required value="Half Day">Half Day
+                <input type="radio" id="timeslot3" name="timeslot" required value="Full Day">Full Day
+                <input type="radio" id="timeslot4" name="timeslot" required value="Two Days">Two Days
+            </p>
+        </fieldset>
+  
+        <fieldset id="extras">
+            <legend>Extras</legend>
+            <p>
+                <label for="annualpass">Annual Pass:</label>
+                <input type="number" id="annualpass" name="annualpass" value="0" min="0">
+            </p>
+  
+            <p>
+                <label for="foodtoken">Food Token:</label>
+                <input type="number" id="foodtoken" name="foodtoken" value="0" min="0">
+            </p>
+        </fieldset>
+        <br>
+  
+        <button type="submit" id="addtocart" name="addtocart">Add to cart</button>
+  
+        <button type="submit" id="placeorder" name="placeorder">Place Order</button>
+  
+    </form>
+  
+    <section id="output">
+      <h2 id="billhead">SERENDIPITY (PVT)LTD</h2>
+      <h4 id="billhead2">121/3, KANDY ROAD</h4>
+      <h4 id="billhead3">KANDY</h4>
+      <h6 id="billhead6">Hotline:+94-8100000000</h6>
+      <h5 id="billhead4">Date:20/12/2022</h5>
+      <h5 id="billhead5">Bill No:000069</h5>
+      <br>
+      <hr>
+      <br>
+      <p>Customer Name: <span id="no1"></span></p>
+      <br>
+      <hr>
+      <br>
+      <p>Number of Foreign Adults&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <span id="no2">00</span></p>
+      <br>
+      <p>Number of Foreign Children&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <span id="no3">00</span></p>
+      <br>
+      <p>Number of Local Adults&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <span id="no4">00</span></p>
+      <br>
+      <p>Number of Local Children(Under the age of 6)&nbsp;&nbsp;&nbsp;: <span id="no5">00</span></p>
+      <br>
+      <p>Number of Local Children(Under the age of 15)&nbsp;: <span id="no6">00</span></p>
+      <br>
+      <p>Number of Annual Pass&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <Span id="no7">00</Span></p>
+      <br>
+      <p>Number of Food Tokens&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <span id="no8">00</span></p>
+      <br>
+      <hr>
+      <br>
+      <p>NET TOTAL&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:LKR  <span id="no9">00.00</span></p>
+      <br>
+      <p>Extras&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:LKR <Span id="no10">00.00</Span></p>
+      <br>
+      <hr>
+      <br>
+      <p>SUB TOTAL&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:LKR <Span id="no11">00.00</Span></p>
+  </section>
+  
+  
+</body>
+</html>
